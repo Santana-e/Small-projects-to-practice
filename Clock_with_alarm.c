@@ -10,7 +10,7 @@ int count_alarm=0;
 /*Código aberto
 By:Isenhart's*/
  
-void limpar(){
+void clear(){
     system("cls || clear");
 }
  
@@ -37,7 +37,7 @@ void main(){
     do{
         printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t     %d:%d:%d",hours,minutes,seconds);
         Sleep(MILISECONDS_PER_SECONDS);
-        limpar();
+        clear();
         seconds++;
         if(hours==alarm[HOUR_ALARM] && minutes==alarm[MINUTE_ALARM] && count_alarm!=500){
             for(i=0;i<500;i++,count_alarm++){
